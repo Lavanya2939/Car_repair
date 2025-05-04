@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verify OTP</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-body">
+  <div class="auth-box">
+    <img src="images/logo.png" alt="Car Repair Logo" class="auth-logo">
+    <h2>Enter OTP sent to your email</h2>
+    <form action="backend/otp_verification.php" method="POST">
+      <input type="text" name="otp" placeholder="Enter 6-digit OTP" required>
+      <button type="submit" class="yellow-btn">Verify</button>
+    </form>
+  </div>
+  <footer style="text-align: center; padding: 15px 10px; margin-top: 40px; font-size: 14px; color: #777;">
+    &copy; <?php echo date("Y"); ?> Car Repair & Service Management System. All rights reserved.
+  </footer>
+  
+</body>
+<footer style="text-align: center; padding: 15px 10px; margin-top: 40px; font-size: 14px; color: #777;">
+  &copy; <?php echo date("Y"); ?> Car Repair & Service Management System. All rights reserved.
+</footer>
+
+</html>

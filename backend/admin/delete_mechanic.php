@@ -1,0 +1,12 @@
+<?php
+include("../db.php");
+
+if (isset($_GET['id'])) {
+  $id = intval($_GET['id']);
+  $query = "DELETE FROM mechanics WHERE mechanic_id = $id";
+  mysqli_query($conn, $query);
+}
+
+header("Location: ../../admin/manage_mechanics.php");
+exit();
+?>
