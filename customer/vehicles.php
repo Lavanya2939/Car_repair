@@ -17,7 +17,8 @@ $vehicles = mysqli_query($conn, "SELECT * FROM vehicles WHERE customer_id = '$cu
     .main-content {
       padding: 30px; font-family: 'Segoe UI', sans-serif;
     }
-    h2, h3 { margin-bottom: 20px; color: #1e1e2f; }
+    h2{margin-bottom: 20px; color:rgb(238, 238, 244);}, 
+    h3 { margin-bottom: 20px; color: #1e1e2f; }
     form {
       background: #ffffff; padding: 25px; border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.08); margin-bottom: 40px;
@@ -91,7 +92,7 @@ $vehicles = mysqli_query($conn, "SELECT * FROM vehicles WHERE customer_id = '$cu
 </div>
 
 <div class="main-content">
-  <h2>Welcome, <?= htmlspecialchars($customerName) ?> – Add a New Vehicle</h2>
+  <h3>Welcome, <?= htmlspecialchars($customerName) ?> – Add a New Vehicle</h3>
 
   <form action="../backend/add_vehicle.php" method="POST" enctype="multipart/form-data">
     <label>Make</label>
@@ -171,8 +172,6 @@ function closeEditModal() {
 </script>
 
 </body>
-<footer style="text-align: center; padding: 15px 10px; margin-top: 40px; font-size: 14px; color: #777;">
-  &copy; <?php echo date("Y"); ?> Car Repair & Service Management System. All rights reserved.
-</footer>
+
 
 </html>

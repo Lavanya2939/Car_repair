@@ -93,8 +93,6 @@ $mechanics = mysqli_query($conn, "SELECT * FROM mechanics WHERE status = 'active
   </form>
 </div>
 </body>
-<footer style="text-align: center; padding: 15px 10px; margin-top: 40px; font-size: 14px; color: #777;">
-  &copy; <?php echo date("Y"); ?> Car Repair & Service Management System. All rights reserved.
-</footer>
+
 
 </html>
